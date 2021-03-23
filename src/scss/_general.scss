@@ -32,3 +32,8 @@
     background-color: $gray800;
   }
 }
+@media screen and (max-width: 991px) {
+  .btn-primary{
+    padding: 20px 70px;
+  }
+}
