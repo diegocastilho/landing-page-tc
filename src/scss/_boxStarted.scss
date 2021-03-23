@@ -1,0 +1,42 @@
+.box-started{
+  display: flex;
+  flex-direction: row;
+  margin-top: 75px;
+}
+.box-started-text{
+  padding-right: 10px;
+  flex: 1 1 50%;
+  p{
+    color: $gray600;
+  }
+  h1{
+    font-weight: 500;
+  }
+}
+.box-started-btn{
+  margin-top: 50px;
+}
+.box-started-img{
+  flex: 1 1 50%;
+  img{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .box-started{
+    flex-direction: column;
+    margin-top: 9px;
+    padding: 24px;
+  }
+  .box-started-text{
+    flex: 1 1 auto;
+    h1{
+      font-size: 37px;
+      line-height: 44px;
+    }
+  }
+  .box-started-img{
+    display: none;
+  }
+}
