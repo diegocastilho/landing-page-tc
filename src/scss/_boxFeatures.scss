@@ -17,7 +17,7 @@
     li{
       display: flex;
       align-items: center;
-      margin-top: 15px;
+      margin-top: 23px;
     }
     img{
       margin-right: 12px;
@@ -29,8 +29,7 @@
   display: flex;
   justify-content: center;
   img{
-    width: 100%;
-    max-width: 404px;
+    max-height: 373px;
     position: relative;
     top: -15px;
   }
@@ -60,5 +59,15 @@
   .box-features-img{
     flex: 1 1 auto;
     order: 2;
+  }
+}
+@media screen and (max-width: 520px) {
+  .box-features-img{
+    img{
+      max-height: 100%;
+      width: 100% ;
+      position: relative;
+      top: -15px;
+    }
   }
 }

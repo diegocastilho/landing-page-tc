@@ -144,7 +144,7 @@
 @media screen and (max-width: 991px) {
   .box-blog{
     background: transparent;
-    margin-top: 107px;
+    margin-top: 87px;
     padding: 10px 27px;
     h2{
       text-align: center;
@@ -153,6 +153,15 @@
   .owl-dots{
     width: 100%;
     text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  #carousel-blog {
+    .owl-carousel {
+      a{
+        flex-direction: column;
+      }
+    }
   }
 }
 
