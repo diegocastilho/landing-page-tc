@@ -1,0 +1,158 @@
+.box-blog{
+  background: $gray50;
+  margin-top: 126px;
+  padding: 184px 50px;
+  h2{
+    text-align: center;
+    margin-bottom: 48px;
+  }
+}
+
+
+//Carrousel
+#carousel-blog {
+  .owl-carousel {
+    margin: 2rem 0;
+    .item {
+      background: #fff;
+      border-radius: 10px;
+      border: 2px solid $gray300;
+      margin-bottom: 89px;
+      transition: all 0.3s;
+      a{
+        padding: 54px 27px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: $black;
+      }
+      &:hover{
+        border-color: $primary;
+        &:before{
+          transition: all .3s;
+          content: '';
+          position: absolute;
+          width: 80%;
+          margin-right: 10%;
+          margin-left: 10%;
+          height: 31.81px;
+          margin-top: 205px;
+          background: #0b132a;
+          opacity: .3;
+          filter: blur(35px);
+          border-radius: 10px;
+          z-index: -1;
+        }
+      }
+    }
+  }
+  .arrow-left{
+    width: 58px;
+    height: 58px;
+    border: 1px solid $primary;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    svg{
+      transform: rotate(180deg);
+      path{
+        fill: $primary;
+      }
+    }
+    &:hover{
+      background: $primary;
+      svg{
+        path{
+          fill: $white;
+        }
+      }
+    }
+  }
+  .arrow-right{
+    width: 58px;
+    height: 58px;
+    border: 1px solid $primary;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    svg{
+      path{
+        fill: $primary;
+      }
+    }
+    &:hover{
+      background: $primary;
+      svg{
+        path{
+          fill: $white;
+        }
+      }
+    }
+  }
+}
+.owl-nav{
+  width: 50%;
+  float: right;
+  text-align: right;
+  position: relative;
+  top: -43px;
+}
+.owl-prev, .owl-next{
+  outline: 0;
+  margin-right: 20px;
+}
+.owl-dots{
+  float: left;
+  width: 50%;
+  position: relative;
+  top: -30px;
+
+}
+.owl-dot{
+  outline: 0;
+  width: 15px;
+  height: 15px;
+  background: $gray300!important;
+  border-radius: 50px;
+  margin-right: 10px;
+  transition: all 0.3s;
+  &.active{
+    width: 45px;
+    background: $primary!important;
+  }
+}
+.carousel-blog-img{
+  margin-right: 35px;
+  flex: 0 1 100px;
+  img{
+    width: 100px!important;
+  }
+}
+.carousel-blog-text{
+  flex: 1 1 auto;
+  h3 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .box-blog{
+    background: transparent;
+    margin-top: 107px;
+    padding: 10px 27px;
+    h2{
+      text-align: center;
+    }
+  }
+  .owl-dots{
+    width: 100%;
+    text-align: center;
+  }
+}
+
