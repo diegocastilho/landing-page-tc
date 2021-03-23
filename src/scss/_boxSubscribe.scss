@@ -46,6 +46,7 @@
     flex: 0 1 250px;
     font-size: 16px;
     line-height: 23px;
+    outline: 0;
   }
   input{
     flex: 1 1 auto;
@@ -58,6 +59,27 @@
     outline: 0;
   }
 }
+.box-subscribe-placeholder{
+  &::-webkit-input-placeholder {
+    color: $success;
+  }
+}
+.box-subscribe-message {
+  display: none;
+  position: absolute;
+  margin-top: 63px;
+  margin-left: -195px;
+  font-size: 14px;
+}
+
+.box-subscribe-error {
+  color: $primary;
+}
+
+.box-subscribe-success {
+  color: $success;
+}
+
 @media screen and (max-width: 991px) {
   .bg-subscribe{
     padding-bottom:56px;
