@@ -71,13 +71,13 @@ $("#email-input").on("change", function() {
     emailInput = $(this).val();
     if (validateEmail(emailInput)) {
         $(this).css({
-            color: "green",
-            border: "1px solid green",
+            color: "#2FAB73",
+            border: "1px solid #2FAB73",
         });
     } else {
         $(this).css({
-            color: "red",
-            border: "1px solid red"
+            color: "#F53838",
+            border: "1px solid #F53838"
         });
     }
 });
